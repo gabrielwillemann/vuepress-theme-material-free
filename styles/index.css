@@ -1,0 +1,457 @@
+:root {
+  --blue: rgb(63, 81, 181);
+  --white: white;
+  --grey-1: rgb(247, 247, 247);
+  --grey-2: rgb(204, 204, 204);
+  --grey-3: rgb(180, 180, 180);
+  --black-1: rgb(97, 97, 97);
+  --black-2: rgb(66, 66, 66);
+  --black-3: rgb(48, 48, 48);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--black-3);
+  padding: 0;
+  margin: 0;
+  background-color: var(--grey-1);
+}
+
+@media all and (max-width: 991px) {
+  .sm\:visible {
+    display: block !important;
+  }
+
+  .md\:visible {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .sm\:visible {
+    display: none !important;
+  }
+
+  .md\:visible {
+    display: block !important;
+  }
+}
+
+.content {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  min-height: calc(100vh - 10rem);
+}
+
+@media all and (min-width: 992px) {
+  .content {
+    grid-template-columns: minmax(0, auto) minmax(600px, 900px) minmax(300px, 400px) minmax(0, auto);
+    grid-template-areas: 'spacer-left main aside spacer-right';
+  }
+}
+
+@media all and (max-width: 991px) {
+  .content {
+    grid-template-columns: minmax(0, auto);
+    grid-template-areas: 'main' 'aside';
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .spacer-left,
+  .spacer-right {
+    display: none;
+  }
+}
+
+.spacer-left {
+  grid-area: spacer-left;
+}
+
+.spacer-right {
+  grid-area: spacer-right;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.spacer {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.header {
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+  min-height: 4rem;
+}
+
+.header-item {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 0 0 0 0;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-option-horizontal {
+  padding: 1.1rem 1rem 1.1rem 1rem;
+  float: left;
+  border-bottom: 0.33rem solid var(--blue);
+  border-top: 0.33rem solid var(--blue);
+}
+
+.menu-option-vertical {
+  border-bottom: 0.01rem solid rgba(255, 255, 255, 0.5);
+}
+
+.menu-option-horizontal:hover {
+  border-bottom: 0.33rem solid var(--white);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-black-2 {
+  background-color: var(--black-2);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black-3 {
+  color: var(--black-3);
+}
+
+.text-grey-2 {
+  color: var(--grey-2);
+}
+
+.text-grey-3 {
+  color: var(--grey-3);
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  font-size: 1.2rem;
+  border-top: 0.15rem solid white;
+  border-bottom: 0.15rem solid rgb(238, 238, 238);
+}
+
+.card-title {
+  border-top: 0.15rem solid white;
+  border-bottom: 0.15rem solid rgb(63, 81, 181);
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.m-0 {
+  margin: 0 0 0 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-0-8 {
+  margin-top: 0.8rem;
+}
+
+.mb-0-8 {
+  margin-bottom: 0.8rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mr-0-3 {
+  margin-right: 0.3rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.p-0-5 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-1-5 {
+  padding: 1.5rem;
+}
+
+.pt-0-5 {
+  padding-top: 0.5rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2-5 {
+  padding-left: 2.5rem;
+}
+
+.pb-0-5 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pr-2-5 {
+  padding-right: 2.5rem;
+}
+
+.border-bottom {
+  border-bottom: 0.15rem solid rgb(238, 238, 238);
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-item-align-center {
+  align-self: center;
+}
+
+.font-size-0-9 {
+  font-size: 0.9rem;
+}
+
+.font-size-1 {
+  font-size: 1rem;
+}
+
+.font-size-1-1 {
+  font-size: 1.1rem;
+}
+
+.font-size-1-5 {
+  font-size: 1.5rem;
+}
+
+.font-size-1-8 {
+  font-size: 1.8rem;
+}
+
+.font-size-2 {
+  font-size: 2rem;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.box-social {
+  border-radius: 0.5rem;
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+}
+
+.image-100 {
+  width: 100%;
+}
+
+.image-90 {
+  width: 90%;
+}
+
+.image-twitter {
+  margin: -0.6rem;
+}
+
+.image-linkedin {
+  margin: 0rem;
+}
+
+.image-github {
+  margin: 0.3rem;
+}
+
+.image-author {
+  border-radius: 50%;
+  height: 7.5rem;
+  width: 7.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--blue);
+  border-style: none;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+  color: var(--white);
+  cursor: pointer;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+.drawer {
+  box-shadow: 0.1rem 0 0.1rem rgba(0, 0, 0, 0.15);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 70vw;
+  z-index: 5;
+  animation-name: slide-drawer;
+  animation-duration: 0.2s;
+}
+
+@keyframes slide-drawer {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 70vw;
+  }
+}
+
+.content__default h1,
+.content__default h2,
+.content__default h3,
+.content__default h4,
+.content__default h5,
+.content__default h6 {
+  margin: 1.5rem 0 1rem 0;
+  font-weight: normal;
+}
+.content__default h1 {
+  font-size: 2rem;
+}
+
+.content__default h2 {
+  font-size: 1.5rem;
+}
+
+.content__default h3,
+.content__default h4,
+.content__default h5,
+.content__default h6 {
+  font-size: 1.4rem;
+}
+
+.article-text,
+.content__default p,
+.content__default ul {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--black-3);
+  letter-spacing: normal;
+  line-height: 1.5rem;
+  margin: 0 0 0.9rem 0;
+  overflow-wrap: break-word;
+}
+
+.content__default ul li {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--black-3);
+  letter-spacing: normal;
+  line-height: 1.5rem;
+  margin: 0 0 0.4rem 0;
+}
+
+.content__default p img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.content__default p a, .content__default ul li a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--blue);
+}
+
+.content__default p a:hover, .content__default ul li a:hover {
+  text-decoration: underline;
+}

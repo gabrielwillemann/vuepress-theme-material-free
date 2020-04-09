@@ -1,0 +1,31 @@
+{
+  "name": "vuepress-theme-material-free",
+  "version": "0.1.0",
+  "description": "Vuepress theme inspired in Material Design Lite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielwillemann/vuepress-theme-material-free.git"
+  },
+  "keywords": [
+    "vuepress",
+    "vuepress-theme",
+    "material",
+    "material-design",
+    "material-design-lite",
+    "material-lite"
+  ],
+  "author": "Gabriel Willemann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielwillemann/vuepress-theme-material-free/issues"
+  },
+  "homepage": "https://github.com/gabrielwillemann/vuepress-theme-material-free#readme",
+  "dependencies": {
+    "@vuepress/plugin-blog": "^1.9.2",
+    "dayjs": "^1.8.23"
+  }
+}

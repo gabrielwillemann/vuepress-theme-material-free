@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 :root {
   --blue: rgb(63, 81, 181);
   --white: white;
@@ -446,12 +449,14 @@ body {
   max-width: 100%;
 }
 
-.content__default p a, .content__default ul li a {
+.content__default p a,
+.content__default ul li a {
   text-decoration: none;
   font-weight: bolder;
   color: var(--blue);
 }
 
-.content__default p a:hover, .content__default ul li a:hover {
+.content__default p a:hover,
+.content__default ul li a:hover {
   text-decoration: underline;
 }

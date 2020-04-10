@@ -17,11 +17,5 @@ import '@vuepress/theme-default/styles/code.styl';
 export default {
   name: 'GlobalLayout',
   components: { Header, ContentSite, Footer },
-  created() {
-    if (this.$ssrContext && typeof this.$ssrContext.userHeadTags == 'string') {
-      this.$ssrContext.userHeadTags += `<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />`;
-      this.$ssrContext.userHeadTags += `<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />`;
-    }
-  },
 };
 </script>

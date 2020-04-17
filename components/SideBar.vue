@@ -1,7 +1,7 @@
 <template>
   <aside class="aside">
     <Social />
-    <div class="card mb-2 p-0-5" v-if="favoritePosts.length > 0">
+    <div class="card mb-2 p-1" v-if="favoritePosts.length > 0">
       <div class="card-header">
         <span class="card-title">{{ t.sideBar && t.sideBar.favoritePosts }}</span>
       </div>

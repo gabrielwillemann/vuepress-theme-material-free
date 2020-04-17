@@ -1,10 +1,10 @@
 # [Vuepress Theme Material Free](https://www.npmjs.com/package/vuepress-theme-material-free)
 
-This is a theme for blogs building with vuepress. The design is inspired in Material Design Lite. In oficial site there are [many templates as example](https://getmdl.io/templates/index.html) and I choiced [this template](https://getmdl.io/templates/text-only/index.html) for building this theme.
+This is a theme for blogs building with Vuepress. The design is inspired in Material Design Lite. In oficial site there are [many templates as example](https://getmdl.io/templates/index.html) and I choce [this template](https://getmdl.io/templates/text-only/index.html) for building this theme.
 
 ## Real Case / Demo
 
-I builded this theme for use in my personal blog: https://sharklabs.com.br/
+I built this theme for use in my personal blog: https://sharklabs.com.br/
 
 But you can use, change or distribuition (license MIT).
 
@@ -29,7 +29,7 @@ npm install vuepress-theme-material-free --save
 
 ## Configuration
 
-This is a example of `config.js` with all options availables:
+This is an example of `config.js` with all options available:
 
 ```js
 // .vuepress/config.js
@@ -157,7 +157,7 @@ Sorry for my spanish, I used the Google Translator :).
 
 ## Front Matter
 
-Availables options:
+Available options:
 
 ```
 ---

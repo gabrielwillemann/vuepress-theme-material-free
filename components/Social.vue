@@ -1,5 +1,5 @@
 <template>
-  <div class="card mb-2 p-0-5" v-if="show">
+  <div class="card mb-2 p-1" v-if="show">
     <div class="card-header">
       <span class="card-title">{{ t.social && t.social.follow }}</span>
     </div>

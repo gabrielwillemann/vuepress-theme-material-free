@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-material-free",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Vuepress theme inspired in Material Design Lite",
   "main": "index.js",
   "scripts": {

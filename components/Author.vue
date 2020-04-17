@@ -1,11 +1,11 @@
 <template>
-  <div class="card mb-1 p-1-5">
+  <div class="card mb-1 p-1">
     <div class="card-header card-title">{{ t.article && t.article.author }}</div>
-    <div class="d-flex pt-1" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <img class="image-author" v-if="authorInfo.image" itemprop="image" :src="authorInfo.image" :alt="author" />
-      <div class="flex-item-align-center">
-        <div class="ml-1 font-size-1-8" itemprop="name">{{ author }}</div>
-        <div class="ml-1 font-size-1-1" itemprop="jobTitle">{{ authorInfo.jobTitle }}</div>
+    <div class="d-flex flex-wrap flex-items-center flex-content-center" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <img class="image-author m-1" v-if="authorInfo.image" itemprop="image" :src="authorInfo.image" :alt="author" />
+      <div>
+        <div class="font-size-1-8" itemprop="name">{{ author }}</div>
+        <div class="font-size-1-1" itemprop="jobTitle">{{ authorInfo.jobTitle }}</div>
       </div>
     </div>
   </div>

@@ -186,6 +186,10 @@ body {
   margin: 0 0 0 0;
 }
 
+.m-1 {
+  margin: 1rem;
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -286,8 +290,12 @@ body {
   flex-wrap: wrap;
 }
 
-.flex-item-align-center {
-  align-self: center;
+.flex-items-center {
+  align-items: center
+}
+
+.flex-content-center {
+  justify-content: center;
 }
 
 .font-size-0-9 {

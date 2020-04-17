@@ -1,6 +1,6 @@
 # [Vuepress Theme Material Free](https://www.npmjs.com/package/vuepress-theme-material-free)
 
-This is a theme for blogs building with Vuepress. The design is inspired in Material Design Lite. In oficial site there are [many templates as example](https://getmdl.io/templates/index.html) and I choce [this template](https://getmdl.io/templates/text-only/index.html) for building this theme.
+This is a theme for blogs building with Vuepress. The design is inspired in Material Design Lite. In oficial site there are [many templates as example](https://getmdl.io/templates/index.html) and I chose [this template](https://getmdl.io/templates/text-only/index.html) for building this theme.
 
 ## Real Case / Demo
 

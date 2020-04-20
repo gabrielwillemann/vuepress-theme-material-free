@@ -6,17 +6,17 @@ This is a theme for blogs building with Vuepress. The design is inspired in Mate
 
 I built this theme for use in my personal blog: https://sharklabs.com.br/
 
-But you can use, change or distribuition (license MIT).
+But you can use, change or distribute (license MIT).
 
 ## Features
 
 - Layout building with CSS Grid Layout and Flexbox
 - Navbar for desktop and mobile devices
-- Custom text in footer
+- Custom text in the footer
 - Social icons (twitter, linkedin, github)
 - Tag names with spaces and special characters
-- Language default: English
-- Language option: Portuguese
+- Default language: English
+- Optional language: Portuguese
 - You can translate this theme for your language using `themeConfig`.
 - Sidebar with favorite articles
 - Schema.org: [TechArticle](https://schema.org/TechArticle)
@@ -103,7 +103,7 @@ This theme have [vuepress-plugin-blog](https://github.com/vuepressjs/vuepress-pl
 }
 ```
 
-But you can apply custom options this plugin using `configPluginBlog` (in `themeConfig`). For example, if you want to use sitemap:
+But you can apply custom options in this plugin using `configPluginBlog` (in `themeConfig`). For example, if you want to use sitemap:
 
 ```js
 // .vuepress/config.js
@@ -181,10 +181,10 @@ About the images of your posts, I recommend that you place in `.vuepress/public/
 
 ## SEO Recomendations
 
-I recommend that plugins (they are optionals but compatible with this theme):
+I recommend the following plugins (they are optionals but compatible with this theme):
 
 - [@vuepress/plugin-google-analytics](https://www.npmjs.com/package/@vuepress/plugin-google-analytics)
 - [vuepress-plugin-seo](https://www.npmjs.com/package/vuepress-plugin-seo)
 - [vuepress-plugin-canonical](https://www.npmjs.com/package/vuepress-plugin-canonical)
 
-But you can use others plugins in your `.vuepress/config.js`.
+But you can use any others in your `.vuepress/config.js`.
